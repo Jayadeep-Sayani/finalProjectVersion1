@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/4c451c42a0.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+	
+    <title>PokeGuesser2</title>
+
+    <link rel="stylesheet" href="style.css">  
+
+    <script src="myscript2.js"></script>
+  </head>
+
+<body id="html2">
+
+	<div id="quizPokemon">Pikachu</div>
+	
+	<div id="form">
+	  <input type="text" id="quizinput" placeholder="How tall is this Pokemon in cm?" id="Q1">
+	  <div id="quizguess" onclick="guessFetch1()">Guess</div>
+	</div>
+	
+	<div id="form">
+	  <input type="text" id="quizinput" placeholder="What color is this Pokemon?" id="Q2">
+	  <div id="quizguess" onclick="guessFetch2()">Guess</div>
+	</div>
+	<div id="form">
+	  <input type="text"id="quizinput"  list="allGenerations" placeholder="What generation is this Pokemon from?" id="Q3">
+	  <datalist id="allGenerations"></datalist>
+	  <div id="quizguess" onclick="guessFetch3()">Guess</div>
+	</div>
+	
+	<div id="form">
+	  <input type="text" id="quizinput" list="allTypes" placeholder="What is the type of this Pokemon?" id="Q4">
+	  <datalist id="allTypes"></datalist>
+	  <div id="quizguess" onclick="guessFetch4()">Guess</div>
+	</div>
+	
+	<div id="form">
+	  <input type="text" id="quizinput" placeholder="What is the capture rate of this Pokemon out of 225?" id="Q5">
+	  <div id="quizguess" onclick="guessFetch5()">Guess</div>
+	</div>
+	
+	
+	<div class="sidebar">
+	  <div>
+		<div><i class="fa-solid fa-gamepad"></i></div>
+		<div><i class="fa-solid fa-dice"></i></div>
+	  </div>
+	</div>
+
+
+</body>
+</html>

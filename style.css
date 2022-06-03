@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sora:wght@100;200;300&display=swap');
+
+:root {
+  --primary-color: #e35b5b;
+  --secondary-color: #eee;
+}
+
+
+input::selection {
+  background-color: var(--primary-color);
+  color: var(--secondary-color)
+}
+
+#submit::selection {
+  background-color: var(--secondary-color);
+  color: var(--primary-color)  
+}
+
+body {
+  
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+}
+
+#html2{
+	background-color: #F7CF78;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.guess-log {
+
+  margin-top: 70px;
+  max-height: 60vh;
+  overflow-y: scroll;
+
+  
+  
+}
+
+#hintButton {
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  right: 10px;
+  top: 10px;
+  
+}
+
+#message {
+  display: none;
+  width: 60vw;
+  height: 200px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border: thick solid #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+
+#lightbox {
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.hint-btn {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  height: 20px;
+  padding: 12px;
+  width: 25px;
+  text-align: center;
+  color: var(--secondary-color);
+  margin: auto;
+  transform: translate(222px, -37.5px);
+  
+}
+
+p {
+  transform: translate(5px, 12px);
+  margin-left: 10px;
+  text-transform: capitalize;
+  
+  
+}
+
+.guess {
+  margin-bottom: 21px;
+  display: block;
+  width: 500px;
+  height: 50px;
+  background-color: #fff;
+  margin: auto;
+}
+
+.form {
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  width: auto;
+
+}
+
+/* #Q1, */
+/* #Q2, */
+/* #Q3, */
+/* #Q4, */
+/* #Q5 { */
+  /* z-index: 0; */
+  /* padding: 10px; */
+  /* width: 25%; */
+  /* height: 5vh; */
+  /* border: 5px solid var(--secondary-color); */
+  /* font-size: 1.5em; */
+/* } */
+
+input[type=text] {
+  z-index: 0;
+  padding: 10px;
+  width: 300px;
+  border-radius: 30px;
+  border: 5px solid var(--secondary-color);
+}
+
+#quizinput[type=text] {
+  z-index: 0;
+  padding: 10px;
+  width: 400px;
+  border-radius: 30px;
+  border: 5px solid var(--secondary-color);
+}
+
+/* #quizPokemon{ */
+  /* z-index: 0; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin: auto; */
+  /* margin-top: 2%; */
+  
+  /* padding: 10px; */
+  /* width: 30%; */
+  /* height: 5vh; */
+  /* color: white; */
+  /* font-size: 4em; */
+/* } */
+
+#submit {
+  cursor: pointer;
+  color: white;
+  background-color: var(--primary-color);
+  border: 0;
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 30px;
+  position: relative;
+  transform: translate(-65px, 0);
+}
+
+
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  width: 76px;
+  height: 100%;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.sidebar div {
+  list-style: none;
+  display: block;
+  width: 100%;
+  
+}
+
+.sidebar div div {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+
+}
+.sidebar div div:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.sidebar div:first-child {
+  
+  margin-top: 50px;
+  border-bottom: 0;
+} 
+
+.sidebar div div {
+  
+  font-size: 1.7rem;
+}
+
+.sidebar div div:first-child::after {
+  content: 'Guess';
+  
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 100%);
+}
+
+.sidebar div div:first-child i {
+  position: relative;
+  transform: translate(50%, -15%);
+}
+
+
+.sidebar div div:nth-child(2)::after {
+  content: 'Quiz';
+  font-size: 0.8rem;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  transform: translate(-75%, 100%);
+}
+
+.sidebar div div:nth-child(2) i {
+  position: relative;
+  transform: translate(25%, -15%);
+}
